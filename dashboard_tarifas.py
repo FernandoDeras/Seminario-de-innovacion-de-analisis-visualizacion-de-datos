@@ -254,7 +254,7 @@ with st.expander("Información del Sistema", expanded=False):
     
     - **Modelo:** SARIMA(0,1,1)(0,1,1,12)
     - **Periodicidad:** Mensual con estacionalidad anual
-    - **Horizonte:** 1 a 24 meses
+    - **Horizonte:** 1 a 12 meses
     - **Intervalo de Confianza:** 95%
     """)
 
@@ -309,7 +309,7 @@ with col_control1:
     meses_a_predecir = st.slider(
         label="Seleccione el horizonte de predicción (meses):",
         min_value=1,
-        max_value=24,
+        max_value=12,
         value=12,
         help="Número de meses futuros para los cuales se generarán las predicciones"
     )

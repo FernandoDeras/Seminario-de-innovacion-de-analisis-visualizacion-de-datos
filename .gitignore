@@ -1,5 +1,41 @@
-# Ignore everything except .py files
-*
-!*.py
-!.gitignore
-!*requirements.txt
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*~
+
+# Documentos
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.rtf
+*.odt
+*.ods
+*.odp
+*.ipynb

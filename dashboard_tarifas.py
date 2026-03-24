@@ -5,7 +5,7 @@ Prototipo Interactivo - Modelo SARIMA
 Proyecto: Seminario de Innovación en Análisis y Visualización de Datos
 Institución: Universidad Internacional de La Rioja (UNIR)
 Autores: Abraham López Velázquez, Fernando Abraham Deras Stenner
-Año: 2025
+Año: 2026
 
 Descripción:
 Este prototipo permite generar predicciones de tarifas eléctricas DB1
@@ -231,7 +231,7 @@ metricas = cargar_metricas()
 
 # Encabezado principal
 st.title("Sistema de Predicción de Tarifas Eléctricas DB1")
-st.markdown("**Prototipo Interactivo | Modelo SARIMA en Tiempo Real**")
+st.markdown("**Prototipo Interactivo | Modelo SARIMA**")
 
 st.markdown("---")
 
@@ -520,7 +520,7 @@ st.markdown("---")
 st.markdown("""
 <div class='footer'>
     <p><strong>Sistema de Predicción de Tarifas Eléctricas DB1</strong></p>
-    <p>Seminario de Innovación en Análisis y Visualización de Datos | UNIR 2025</p>
+    <p>Seminario de Innovación en Análisis y Visualización de Datos | UNIR 2026</p>
     <p>Autores: Abraham López Velázquez, Fernando Abraham Deras Stenner</p>
     <p style='font-size: 11px; margin-top: 15px; color: #95a5a6;'>
         Modelo: SARIMA(0,1,1)(0,1,1,12) | Datos: Diciembre 2017 - Septiembre 2025 | Precisión: MAPE < 1%

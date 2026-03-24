@@ -9,7 +9,7 @@ Año: 2026
 
 Descripción:
 Este prototipo permite generar predicciones de tarifas eléctricas DB1
-utilizando el modelo SARIMA(0,1,1)(0,1,1,12) entrenado. El usuario puede
+utilizando el modelo SARIMA(1,0,0)(0,0,1,12) entrenado. El usuario puede
 seleccionar el horizonte de predicción y el sistema ejecuta el modelo
 en tiempo real para generar las proyecciones correspondientes.
 """
@@ -252,7 +252,7 @@ with st.expander("Información del Sistema", expanded=False):
     
     ### Especificaciones Técnicas
     
-    - **Modelo:** SARIMA(0,1,1)(0,1,1,12)
+    - **Modelo:** SARIMA(1,0,0)(0,0,1,12)
     - **Periodicidad:** Mensual con estacionalidad anual
     - **Horizonte:** 1 a 12 meses
     - **Intervalo de Confianza:** 95%
@@ -268,7 +268,7 @@ col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.metric(
         label="Modelo",
-        value="SARIMA(0,1,1)(0,1,1,12)"
+        value="SARIMA(1,0,0)(0,0,1,12)"
     )
 
 with col2:
@@ -523,7 +523,7 @@ st.markdown("""
     <p>Seminario de Innovación en Análisis y Visualización de Datos | UNIR 2026</p>
     <p>Autores: Abraham López Velázquez, Fernando Abraham Deras Stenner</p>
     <p style='font-size: 11px; margin-top: 15px; color: #95a5a6;'>
-        Modelo: SARIMA(0,1,1)(0,1,1,12) | Datos: Diciembre 2017 - Septiembre 2025 | Precisión: MAPE < 1%
+        Modelo: SARIMA(1,0,0)(0,0,1,12) | Datos: Diciembre 2017 - Septiembre 2025 | Precisión: MAPE < 1%
     </p>
 </div>
 """, unsafe_allow_html=True)

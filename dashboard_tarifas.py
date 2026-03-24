@@ -322,7 +322,7 @@ with col_control2:
     ejecutar_prediccion = st.button(
         "Generar Predicción",
         type="primary",
-        use_container_width=True
+        width="stretch"
     )
 
 st.markdown("---")
@@ -423,7 +423,7 @@ if ejecutar_prediccion:
         )
     )
     
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
     
     # ========================================================================
     # Sección 2: Tabla de Resultados
@@ -442,7 +442,7 @@ if ejecutar_prediccion:
     
     st.dataframe(
         df_display,
-        use_container_width=True,
+        width="stretch",
         hide_index=True
     )
     
@@ -502,7 +502,7 @@ if ejecutar_prediccion:
             data=csv_export,
             file_name=f"prediccion_tarifas_db1_{meses_a_predecir}meses_{datetime.now().strftime('%Y%m%d')}.csv",
             mime="text/csv",
-            use_container_width=True
+            width="stretch"
         )
     
     with col_exp2:
